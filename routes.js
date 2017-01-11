@@ -25,6 +25,9 @@ module.exports = {
     app.get('/users/',function(req,res){
       user.listAll(res);
     });
+    app.get('/relatorios',function(req,res){
+      res.redirect('/views/index.html');
+    })
 
   }
 };
