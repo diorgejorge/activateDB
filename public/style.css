@@ -1,0 +1,6 @@
+html                    { overflow-y:scroll; }
+body                    { padding-top:50px; }
+#tarefas-list           { margin-bottom:30px; }
+.green { background-color:#5cb85c !important; color: white !important;}
+.red { background-color:#d9534f !important; color: white !important;}
+.blue { background-color:#019ABE !important; color: white !important;}
