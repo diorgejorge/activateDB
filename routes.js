@@ -46,6 +46,9 @@ module.exports = {
     app.get('/tarefasProjetoPendentes',function(req,res){
       res.redirect('/views/tarefasProjetoPendentes.html');
     });
+    app.get('/statusReport',function(req,res){
+      res.redirect('/views/statusReport.html');
+    });
     app.get('/',function(req,res){
       res.redirect('/views/index.html');
     });
