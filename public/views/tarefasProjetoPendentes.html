@@ -40,11 +40,11 @@
             </tr>
             </thead>
             <tbody>
-            <tr ng-repeat="y in value| filter:firstname:startsWith" ng-hide="y.done_ratio==100">
+            <tr ng-repeat="y in value| filter:firstname:startsWith" ng-hide="y.done_ratio==100&&y.name!='DONE'">
                 <td><a href="http://redmine.totvs.sa/issues/{{y.id}}">{{y.id}}</a></td>
                 <td class="col-md-4 text-center">{{y.subject}}</td>
 				        <!--<td class="col-md-4" ng-bind-html="y.description | renderHTML"></td>-->
-                <td>{{y.name}}</td>
+                <td>{{y.name}}A</td>
                 <td>{{y.due_date}}</td>
                 <td>{{y.firstname}} {{y.lastname}}</td>
 				        <td>{{ y.due_date | getAge }}</td>
